@@ -82,7 +82,7 @@ document.addEventListener('DOMContentLoaded', function () {
                         <img src="${receta.image}" alt="${receta.name}" class="receta-img">
                         <h2 class="receta-title">${receta.name}</h2>
                         <p class="receta-dif">Dificultad: ${receta.difficulty}</p>
-                        <a href="#" class="receta-link">Ver Detalles</a>
+                        <a href="recetas.html?id=${receta.id}" class="receta-link">Ver Detalles</a>
                     </div>
                 `;
             }
@@ -97,3 +97,4 @@ document.addEventListener('DOMContentLoaded', function () {
         fetchRecetas();
     });
 });
+

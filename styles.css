@@ -166,3 +166,62 @@ text-align: center;
 margin-top: 30px;
 
 }
+
+
+
+.receta {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+}
+
+.receta h1 {
+  font-size: 2em;
+  color: #333;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.receta p {
+  margin: 10px 0;
+  font-size: 1.1em;
+  color: #555;
+}
+
+.receta img {
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin: 20px 0;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.receta p strong {
+  color: #333;
+  font-weight: bold;
+}
+
+.receta p:first-of-type {
+  font-size: 1.2em;
+  color: #444;
+}
+
+.receta p:last-of-type {
+  font-style: italic;
+  color: #666;
+}
+
+.receta p span {
+  background-color: #f8f9fa;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+
