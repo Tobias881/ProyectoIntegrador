@@ -1,0 +1,595 @@
+* {
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+body{
+  background-color: #fffdcd;
+  padding-bottom: 60px;
+}  
+.logo{
+    height: 150px;
+    display: flex;
+    
+
+}
+header{
+  background-color: rgb(30, 30, 30);
+  height: 150px;
+    
+ 
+  }
+
+nav {
+    width: 50%;
+}
+
+nav ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: rgb(255, 225, 0);
+    list-style: none;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+}
+ 
+ nav ul li {
+    display: flex;
+    justify-content: space-between;
+    text-decoration: none;
+ }
+
+ nav a{
+    color: rgb(255, 225, 0);
+    text-decoration: none;
+
+
+ }
+
+ .arriba{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+ }
+
+ #campoBusqueda{
+    border-radius: 50px;
+    height: 30px;
+   background-color: rgb(255, 225, 0);
+   color: black;
+   padding: 10px;
+ }
+
+ .buscar {
+    border-radius: 50px;
+    height: 30px;
+    width: 60px;
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 225, 0);
+ }
+  
+
+ footer{
+   position: fixed;
+   bottom: 0;
+   padding: 10px 0;
+   width: 1500px;
+   height: 50px;
+   justify-content: space-between;
+   align-items: center;
+   padding: 10px;
+   background-color: rgb(255, 225, 0);
+   font-family: Arial, Helvetica, sans-serif;
+ }
+
+ .foot{
+   display: flex;
+   flex-direction: row;
+   color: rgb(30, 30, 30);
+
+   
+}
+
+.ult{
+   padding-bottom: 0;
+   margin-bottom: 0;
+   color: rgb(30, 30, 30);
+
+}
+
+
+.receta-container {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   gap: 20px;
+   padding: 20px;
+   margin-top: 1px;
+ }
+ 
+ .receta-card {
+  display: flex;
+  flex-direction: column;
+   background-color: rgb(30, 30, 30);
+   border-radius: 8px;
+   width: 250px;
+   padding: 15px;
+   text-align: center;
+   margin: 65px auto;
+   color: white;
+   font-family: Arial, Helvetica, sans-serif;
+   margin-left: 10px;
+   margin-right: 10px;
+ }
+ 
+ .receta-img {
+   width: 100%;
+   height: 180px;
+   border-radius: 5px;
+ }
+ 
+ .receta-titulo {
+   font-size: 18px;
+   margin: 10px 0;
+ }
+ 
+ .receta-dif {
+  display: block;
+  margin-top: auto;
+   font-size: 10;
+   margin: 5px 0;
+ }
+ 
+ .receta-link {
+   display: block;
+   margin-top: auto;
+   padding: 10px 15px;
+   background-color: rgb(255, 225, 0);
+   color: black;
+   text-decoration: none;
+   font-weight: bold;
+   font-family: Arial, Helvetica, sans-serif;
+   border-radius: 5px;
+   
+ }
+
+
+
+ .cargarMas {
+   display: block;
+   margin: 60px auto;
+   padding: 10px 20px;
+   background-color: rgb(255, 225, 0);
+   color: black;
+   border: none;
+   border-radius: 5px;
+   font-weight: bold;
+   width: 200px;
+    text-align: -webkit-center;
+
+}
+
+
+
+.titulo-receta {
+text-align: center;
+margin-top: 30px;
+font-family: Arial, Helvetica, sans-serif;
+font-size: 70px;
+
+}
+
+
+
+.receta {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+}
+
+.receta h1 {
+  font-size: 2em;
+  color: #333;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.receta p {
+  margin: 10px 0;
+  font-size: 1.1em;
+  color: #555;
+}
+
+.receta img {
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin: 20px 0;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.receta p strong {
+  color: #333;
+  font-weight: bold;
+}
+
+.receta p:first-of-type {
+  font-size: 1.2em;
+  color: #444;
+}
+
+.receta p:last-of-type {
+  font-style: italic;
+  color: #666;
+}
+
+.receta p span {
+  background-color: #f8f9fa;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+
+
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+
+.categorias {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.categoria-btn {
+  background-color: #383e39;
+  color: rgb(255, 225, 0);
+  border: none;
+  padding: 10px 20px;
+  margin: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 10px;
+  height: 80px;
+  width: 150px;
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+
+}
+
+
+
+
+
+.titcat{
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+
+.btnVerMas{
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(255, 225, 0);
+  height: 30px;
+  width: 95px;
+  color: black;
+  text-decoration: none;
+  border-radius: 30px;
+  margin-top: 5px;
+  font-weight: bold;
+}
+
+
+.nombreCategoria{
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.recetas{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-self: start;
+}
+
+
+#recetas-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.contenedor-padre {
+  display: flex;
+  justify-content: center; 
+  align-items: center;     
+  height: 100%;
+  margin-top: 9%;
+}
+
+.contenedor-login {
+  background-color: rgb(30, 30, 30);
+  padding: 20px 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  margin-top: 20px;
+  color: white;
+
+}
+
+.formulario-login h1 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: white;
+  text-align: center;
+}
+
+.grupo-campo {
+  margin-bottom: 15px;
+}
+
+.grupo-campo label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 14px;
+  color: white;
+}
+
+.grupo-campo input {
+  width: 100%;
+  padding: 10px;
+  font-size: 14px;
+  border-radius: 4px;
+  box-sizing: border-box;
+  border: solid black;
+}
+
+.btn-enviar {
+  width: 100%;
+  padding: 10px;
+  background-color: rgb(0, 174, 255);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+
+.enlace-registro {
+  display: block;
+  margin-top: 15px;
+  text-align: center;
+  color: rgb(0, 174, 255);
+  text-decoration: none;
+  font-size: 14px;
+}
+
+
+
+
+.contenedor-padre-registro {
+  display: flex;
+  justify-content: center; 
+  align-items: center;     
+  height: 100%;
+  margin-top: 9%;
+}
+.contenedor-registro {
+  background-color: rgb(30, 30, 30);
+  padding: 20px 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  margin-top: 20px;
+  color: white;
+
+}
+
+.formulario-registro h1 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: white;
+  text-align: center;
+}
+
+
+
+.grupo-campo input {
+  width: 100%;
+  padding: 10px;
+  font-size: 14px;
+  border-radius: 4px;
+  box-sizing: border-box;
+  border: solid black;
+}
+
+.btn-enviar {
+  width: 100%;
+  padding: 10px;
+  background-color: rgb(0, 174, 255);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+
+.enlace-login {
+  display: block;
+  margin-top: 15px;
+  text-align: center;
+  color: rgb(0, 174, 255);
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.termycon{
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  font-size: small;
+}
+
+.term{
+  font-size: 100px;
+}
+
+.invalido{
+  font-size: 13px;
+}
+
+@media (max-width: 768px) {
+  body {
+      padding-bottom: 20px;
+  }
+
+  header {
+      height: 350px;
+
+  }
+
+  nav {
+      width: 100%;
+      padding: 10px;
+  }
+
+  nav ul {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  nav ul li {
+      margin-bottom: 10px;
+  }
+
+  .logo {
+      height: 120px;
+      justify-content: center;
+  }
+
+  .arriba {
+      flex-direction: column;
+  }
+
+
+  #campoBusqueda {
+      width: 80%;
+      margin-bottom: 10px;
+  }
+
+  .buscar {
+      width: 80%;
+  }
+
+  footer {
+      width: 100%;
+      padding: 10px 0;
+  }
+
+  .receta-container {
+      flex-direction: column;
+      align-items: center;
+      gap: 15px;
+  }
+
+  .receta-card {
+      width: 100%;
+      margin: 15px 0;
+  }
+
+  .cargarMas {
+      width: 20%;
+      padding: 12px 0;
+  }
+
+  .categorias {
+      flex-direction: column;
+  }
+
+  .categoria-btn {
+      width: 100%;
+      text-align: center;
+      margin-bottom: 10px;
+  }
+
+  .btnVerMas {
+      width: 70%;
+  }
+
+  .titulo-receta {
+      font-size: 50px;
+      margin-top: 20px;
+  }
+
+
+  .formulario-login {
+      width: 90%;
+      justify-content: center;
+      align-items: center;
+  }
+
+.formulario-registro {
+    width: 90%;
+}
+
+  .contenedor-padre-registro {
+      margin-top: 10%;
+  }
+
+  .contenedor-padre {
+    margin-top: 10%;
+}
+
+
+  .term {
+      font-size: 30px;
+  }
+
+  .invalido {
+      font-size: 11px;
+  }
+}
+
+.recetas{
+  display: flex;
+  flex-direction: column;
+}
+
+.receta-img{
+  max-width: 250px;
+}
+
+.receta-card{
+  max-width: 350px;
+}

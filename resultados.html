@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Proyecto Integrador</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
     <header>
@@ -20,8 +20,8 @@
         </ul>
     </nav>
 
-    <form id="buscadorFormulario">
-        <input type="text" id="campoBusqueda" placeholder="Escribe tu búsqueda" class="buscador" action="resultado.html" method="get">
+    <form id="buscadorFormulario" action="resultados.html" method="get">
+        <input type="text" id="campoBusqueda" name="query" placeholder="Escribe tu búsqueda">
         <button type="submit" class="buscar">Buscar</button>
     </form>
     
@@ -30,8 +30,12 @@
 
     </header>
 
-    <h1>RESULTADOS</h1>
+    <h1 class="query"><span name="query"></span></h1>
 
+    <div class="container">
+        <div id="recetas-container" class="recetas"></div>
+    </div>
+    
 
     <footer>
         <div class="foot">
@@ -44,6 +48,6 @@
             <h6>Proyecto integrador - Programación 1 - 2024</h6>
         </div>
     </footer>
-    <script src="main.js"></script>
+    <script src="js/resultados.js"></script>
 </body>
 </html>

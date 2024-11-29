@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Proyecto Integrador</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
     <header>
@@ -20,18 +20,23 @@
         </ul>
     </nav>
 
-    <form id="buscadorFormulario">
-        <input type="text" id="campoBusqueda" placeholder="Escribe tu búsqueda" class="buscador" action="resultado.html" method="get">
+    <form id="buscadorFormulario" action="resultados.html" method="get">
+        <input type="text" id="campoBusqueda" name="query" placeholder="Escribe tu búsqueda">
         <button type="submit" class="buscar">Buscar</button>
     </form>
+    
     
 
 </div>
 
     </header>
 
-<h1>CATEGORIAS</h1>
-
+    <div class="container">
+        <h1 class="titcat">Categorías de Recetas</h1>
+        <div id="categorias-container" class="categorias">
+           
+        </div>
+    </div>
     <footer>
         <div class="foot">
             <h4>TIAGO CANAN</h4>
@@ -43,6 +48,7 @@
             <h6>Proyecto integrador - Programación 1 - 2024</h6>
         </div>
     </footer>
-    <script src="main.js"></script>
+    <script src="js/categorias.js"></script>
+
 </body>
 </html>
