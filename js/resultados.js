@@ -40,9 +40,11 @@ fetch(`https://dummyjson.com/recipes/search?q=${query}`)
     .then(function(data) {
         const recetas = data.recipes || [];
         console.log("Recetas recibidas:", recetas);
+        const mensajeBusqueda = document.getElementById('mensajeBusqueda');
+        mensajeBusqueda.innerHTML = `<p>Resultados de búsqueda para: ${query}</p>`;
 
         if (recetas.length === 0) {
-            contenedorRecetas.innerHTML = '<p>No se encontraron recetas.</p>';
+            contenedorRecetas.innerHTML = '<p>No hay coincidencias.</p>';
             return;
         }
 
@@ -50,10 +52,10 @@ fetch(`https://dummyjson.com/recipes/search?q=${query}`)
         for (let i = 0; i < recetas.length; i++) {
             const receta = recetas[i];
             markUp += `
+
                 <div class="receta-card">
                     <img src="${receta.image}" alt="${receta.name}" class="receta-img">
                     <h2 class="receta-titulo">${receta.name}</h2>
-                    <p class="receta-dif">Dificultad: ${receta.difficulty}</p>
                     <a href="receta.html?id=${receta.id}" class="receta-link">Ver Detalles</a>
                 </div>
             `;

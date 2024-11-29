@@ -469,6 +469,11 @@ font-size: 70px;
   font-size: 13px;
 }
 
+
+#mensajeBusqueda{
+margin-top: 20px;
+margin-left: 20px;
+}
 @media (max-width: 768px) {
   body {
       padding-bottom: 20px;
