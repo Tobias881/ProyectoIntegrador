@@ -19,9 +19,7 @@ if (contenedorRecetas) {
                             if (datos.recipes.length > 0) {
                                 const recetas = datos.recipes;
                                 mostrarRecetas(recetas);
-                                // if (recetasCargadas >= recetas.length) {
-                                //     botonCargarMas.style.display = 'none';
-                                // }
+                                
                             }
                         }
                     }
